@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class Calling : MonoBehaviour
+public class MenuUiController : MonoBehaviour
 
 {
     public GameObject uiElement;
-    public GameObject Call; 
+    public GameObject Call;
     public AudioSource audioSource;
     public AudioSource voice;
 
@@ -23,12 +22,12 @@ public class Calling : MonoBehaviour
 
     }
 
-public void Mainmenu()
+    public void Mainmenu()
     {
         Call.SetActive(false);
     }
-public void PlaySound()
-{
-    voice.Play();
-}
+    public void PlaySound()
+    {
+        voice.Play();
+    }
 }
