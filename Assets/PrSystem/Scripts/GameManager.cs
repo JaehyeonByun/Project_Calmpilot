@@ -14,22 +14,26 @@ public class GameManager : MonoBehaviour
     {
         MainMenu,
         GameStart1,
-        GamePaused,
-        GameEnd
+        GameEnd,
     }
 
     public GameState gameState;
 
-    public void GameStart1()
-    {
-        SceneManager.LoadScene("Conference1");
-        gameState = GameState.GameStart1;
-    }
+    public TMP_Text timerText; // 유니티 UI Text 오브젝트에 연결할 Text 컴포넌트
+    private float countdownTime = 120.0f;
+
     public void GameMenu()
     {
         SceneManager.LoadScene("MainMenu");
         gameState = GameState.MainMenu;
     }
+    public void GameStart1()
+    {
+        SceneManager.LoadScene("Room1");
+        gameState = GameState.GameStart1;
+    }
+
+
     public void GameExit()
     {
         UnityEngine.Application.Quit();
@@ -61,10 +65,7 @@ public class GameManager : MonoBehaviour
         {
 
         }
-        else if (gameState == GameState.GameStart1)
-        {
-
-        }
+      
         else if (gameState == GameState.GameEnd)
         {
 

@@ -13,6 +13,7 @@ public class Calling : MonoBehaviour
     public AudioSource voice;
 
 
+
     // 버튼 클릭 시 호출될 함수
     public void OnButtonClick()
     {
@@ -28,6 +29,7 @@ public void Mainmenu()
     {
         Call.SetActive(false);
         Menu.SetActive(true);
+        
     }
 public void PlaySound()
 {
