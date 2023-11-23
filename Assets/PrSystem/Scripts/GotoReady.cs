@@ -1,23 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Calling : MonoBehaviour
-
+public class GotoReady : MonoBehaviour
 {
     public GameObject uiElement;
     public GameObject Call;
     public GameObject Menu;
-    public AudioSource audioSource;
+    public AudioSource Ring;
     public AudioSource voice;
-
-
-
-    // 버튼 클릭 시 호출될 함수
     public void OnButtonClick()
     {
-        audioSource.Play(); // 음향 재생
+        Ring.Play(); // 음향 재생
         Call.SetActive(true);
         uiElement.SetActive(false);
         Invoke("PlaySound", 2f);
@@ -25,14 +20,14 @@ public class Calling : MonoBehaviour
 
     }
 
-public void Mainmenu()
+    public void Mainmenu()
     {
         Call.SetActive(false);
         Menu.SetActive(true);
-        
+
     }
-public void PlaySound()
-{
-    voice.Play();
-}
+    public void PlaySound()
+    {
+        voice.Play();
+    }
 }

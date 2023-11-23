@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     private float time;
     private void Awake()
     {
-        time = 120f;
+        time = 600f;
     }
     private void Update()
     {
@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
         if (time > 0)
             time -= Time.deltaTime;
         else
-            GameManager.instance.GameStart1();
+            GameManager.instance.LectureRoom();
         timeText.text = time.ToString();
         timeText.text = string.Format("{0:N0}", time);
 

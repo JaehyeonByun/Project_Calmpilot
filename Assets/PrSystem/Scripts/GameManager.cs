@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
     public enum GameState
     {
         MainMenu,
-        GameStart1,
+        LectureRoom,
+        ConcertHall,
+        Interview,
         GameEnd,
     }
 
@@ -27,13 +29,24 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         gameState = GameState.MainMenu;
     }
-    public void GameStart1()
+    public void LectureRoom()
     {
         SceneManager.LoadScene("Room1");
-        gameState = GameState.GameStart1;
+        gameState = GameState.LectureRoom;
+;
     }
-
-
+    public void ConcertHall()
+    {
+        SceneManager.LoadScene("Room2");
+        gameState = GameState.ConcertHall;
+        ;
+    }
+    public void Interview()
+    {
+        SceneManager.LoadScene("Room3");
+        gameState = GameState.Interview;
+        ;
+    }
     public void GameExit()
     {
         UnityEngine.Application.Quit();
