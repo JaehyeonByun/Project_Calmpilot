@@ -5,22 +5,23 @@ using UnityEngine;
 public class Clap : MonoBehaviour
 {
     public Animator ClapAnimation;
-    public AudioSource clapSound;
 
 
     private void Start()
     {
-        Invoke("DoClap", 5f);
+        Invoke("DoClap", 12f);
     }
 
-    void DoClap()
+    public void DoClap()
     {
         ClapAnimation.SetBool("Clap", true);
-        clapSound.Play();
-        Invoke("StopClap", 4f);
+      
+        Invoke("StopClap", 6f);
     }
-    void StopClap()
+  
+    public void StopClap()
     {
-        ClapAnimation.SetBool("Clap", true);
+        ClapAnimation.SetBool("Clap", false);
     }
+  
 }
