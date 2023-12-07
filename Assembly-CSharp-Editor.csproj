@@ -60,9 +60,8 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.13f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\University Lecture Theatre 02\Editor\x64\Bakery\scripts\ftSavedPadding2.cs" />
-    <Compile Include="Assets\University Lecture Theatre 02\Editor\x64\Bakery\scripts\ftModelPostProcessor.cs" />
-    <Compile Include="Assets\Stadium Crowd Generator\Editor\GrandstandEditor.cs" />
+    <Compile Include="Assets\Assets\University Lecture Theatre 02\Editor\x64\Bakery\scripts\ftSavedPadding2.cs" />
+    <Compile Include="Assets\Assets\University Lecture Theatre 02\Editor\x64\Bakery\scripts\ftModelPostProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
