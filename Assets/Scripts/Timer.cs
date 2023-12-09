@@ -21,8 +21,12 @@ public class Timer : MonoBehaviour
             time -= Time.deltaTime;
         else
             GameManager.instance.LectureRoom();
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
+
+
         timeText.text = time.ToString();
-        timeText.text = string.Format("{0:N0}", time);
+        timeText.text = string.Format("{0}:{1:00}", minutes, seconds);
 
     }
 }
