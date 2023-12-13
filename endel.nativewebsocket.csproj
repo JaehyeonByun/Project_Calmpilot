@@ -965,6 +965,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Bhaptics.SDK2.csproj">
+      <Project>{68D8A217-CB16-37CF-C069-1CAB3AD6EDCF}</Project>
+      <Name>Bhaptics.SDK2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
