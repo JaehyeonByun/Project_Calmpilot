@@ -12,7 +12,7 @@ public class Question : MonoBehaviour
 
     public void OnButtonClick()
     {
-        Invoke("DoQuestion", 5f);
+        Invoke("DoQuestion", 2f);
     }
     public void DoQuestion()
     {
