@@ -6,6 +6,8 @@ public class Clap : MonoBehaviour
 {
     public Animator ClapAnimation;
 
+  
+
 
     private void Start()
     {
@@ -15,7 +17,7 @@ public class Clap : MonoBehaviour
     public void DoClap()
     {
         ClapAnimation.SetBool("Clap", true);
-      
+       
         Invoke("StopClap", 6f);
     }
   
@@ -23,5 +25,5 @@ public class Clap : MonoBehaviour
     {
         ClapAnimation.SetBool("Clap", false);
     }
-  
+
 }
