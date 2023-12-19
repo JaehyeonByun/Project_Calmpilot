@@ -8,6 +8,6 @@ public class GotoStage : MonoBehaviour
     public void GoButtonClick()
         {
         ClickSound.Play();
-        GameManager.instance.LectureRoom();
+        GameManager.instance.Frequency();
     }
     }

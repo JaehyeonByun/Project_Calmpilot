@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     private float time;
     private void Awake()
     {
-        time = 600f;
+        time = 120f;
     }
     private void Update()
     {
@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
         if (time > 0)
             time -= Time.deltaTime;
         else
-            GameManager.instance.LectureRoom();
+            GameManager.instance.Frequency();
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time % 60);
 

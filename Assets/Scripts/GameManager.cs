@@ -13,15 +13,16 @@ public class GameManager : MonoBehaviour
     public enum GameState
     {
         MainMenu,
-        LectureRoom,
-        ConcertHall,
-        Interview,
+        Frequency,
+        TapTap,
+        Breathe,
+        NoFeedback,
         GameEnd,
     }
 
     public GameState gameState;
 
-    public TMP_Text timerText; // 유니티 UI Text 오브젝트에 연결할 Text 컴포넌트
+    public TMP_Text timerText;
     private float countdownTime = 120.0f;
 
     public void GameMenu()
@@ -29,24 +30,31 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         gameState = GameState.MainMenu;
     }
-    public void LectureRoom()
+    public void Frequency()
     {
         SceneManager.LoadScene("Room1");
-        gameState = GameState.LectureRoom;
+        gameState = GameState.Frequency;
 ;
     }
-    public void ConcertHall()
+    public void TapTap()
     {
         SceneManager.LoadScene("Room2");
-        gameState = GameState.ConcertHall;
+        gameState = GameState.TapTap;
         ;
     }
-    public void Interview()
+    public void Breathe()
     {
         SceneManager.LoadScene("Room3");
-        gameState = GameState.Interview;
+        gameState = GameState.Breathe;
         ;
     }
+    public void NoFeedback()
+    {
+        SceneManager.LoadScene("Room4");
+        gameState = GameState.NoFeedback;
+        ;
+    }
+
     public void GameExit()
     {
         UnityEngine.Application.Quit();

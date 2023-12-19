@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\GameEnd.cs" />
     <Compile Include="Assets\Scripts\Chairman.cs" />
     <Compile Include="Assets\Scripts\Answer.cs" />
-    <Compile Include="Assets\Scripts\GotoInterview.cs" />
     <Compile Include="Assets\Scripts\Clap.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\StepManager.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\RayAttachModifier.cs" />
@@ -75,15 +74,17 @@
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Assets\University Lecture Theatre 02\Bakery\ftLightmapsStorage.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\AnchorVisuals.cs" />
+    <Compile Include="Assets\Scripts\Timer2.cs" />
     <Compile Include="Assets\Scripts\NextPageButton.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
     <Compile Include="Assets\Assets\University Lecture Theatre 02\Bakery\BakeryProjectSettings.cs" />
     <Compile Include="Assets\Assets\University Lecture Theatre 02\Bakery\ftLocalStorage.cs" />
-    <Compile Include="Assets\Scripts\GotoHall.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\BezierCurve.cs" />
     <Compile Include="Assets\Scripts\GotoStage.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\VideoPlayerRenderTexture.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\CalloutGazeController.cs" />
+    <Compile Include="Assets\Scripts\GotoStage3.cs" />
+    <Compile Include="Assets\Scripts\GotoStage1.cs" />
     <Compile Include="Assets\Assets\University Lecture Theatre 02\Bakery\ftGlobalStorage.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\Scripts\ScriptNext.cs" />
@@ -93,13 +94,17 @@
     <Compile Include="Assets\Scripts\Motion2.cs" />
     <Compile Include="Assets\Scripts\Answer2.cs" />
     <Compile Include="Assets\Scripts\Question.cs" />
+    <Compile Include="Assets\Scripts\GotoStage2.cs" />
     <Compile Include="Assets\Scripts\ClapSound.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\EndAnswer.cs" />
+    <Compile Include="Assets\Scripts\Timer1.cs" />
+    <Compile Include="Assets\Scripts\ReadyPresentation.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\XRKnob.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
+    <Compile Include="Assets\Scripts\Timer3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\TextMesh Pro\Shaders\TMPro.cginc" />
