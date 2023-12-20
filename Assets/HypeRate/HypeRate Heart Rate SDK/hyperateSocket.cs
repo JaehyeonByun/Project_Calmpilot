@@ -95,7 +95,7 @@ namespace Bhaptics.SDK2
                 if (info.Value >= 60)
                 {
                     Debug.Log(info.Value);
-                    BhapticsLibrary.Play("eatfood"); // second haptic feedback
+                    BhapticsLibrary.Play("tap_tap_2"); // second haptic feedback
                     isHeartRateHigh = false; // reset the state
                 }
             };
