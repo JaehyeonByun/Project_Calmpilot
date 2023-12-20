@@ -24,7 +24,7 @@ namespace Bhaptics.SDK2
     {
         // Put your websocket Token ID here
         public string websocketToken2 = "iXiyxevGDyhWff3YnvEfpcCdKMJvArtSYyUkrXF6Siq1qhBrSkB9zsYVjGWhFPh3"; //You don't have one, get it here https://www.hyperate.io/api
-        public string hyperateID2 = "C21C";
+        public string hyperateID3 = "7b4b04";
 
         // Textbox to display your heart rate in
         List<NumberInfo> numberInfoList = new List<NumberInfo>();
@@ -127,7 +127,7 @@ namespace Bhaptics.SDK2
             if (websocket.State == WebSocketState.Open)
             {
                 // Log into the "internal-testing" channel
-                await websocket.SendText("{\"topic\": \"hr:" + hyperateID2 + "\", \"event\": \"phx_join\", \"payload\": {}, \"ref\": 0}");
+                await websocket.SendText("{\"topic\": \"hr:" + hyperateID3 + "\", \"event\": \"phx_join\", \"payload\": {}, \"ref\": 0}");
             }
         }
         async void SendHeartbeat()
