@@ -150,6 +150,7 @@ namespace Bhaptics.SDK2
 
         async void SaveToCSV()
         {
+            Debug.Log("SAVETOCSV");
             if (numberInfoList.Count == 0)
             {
                 Console.WriteLine("저장된 데이터가 없습니다.");
