@@ -75,6 +75,7 @@
     <Compile Include="Assets\Assets\University Lecture Theatre 02\Bakery\ftLightmapsStorage.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\AnchorVisuals.cs" />
     <Compile Include="Assets\Scripts\Timer2.cs" />
+    <Compile Include="Assets\Scripts\ittuitui.cs" />
     <Compile Include="Assets\Scripts\NextPageButton.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
     <Compile Include="Assets\Assets\University Lecture Theatre 02\Bakery\BakeryProjectSettings.cs" />
