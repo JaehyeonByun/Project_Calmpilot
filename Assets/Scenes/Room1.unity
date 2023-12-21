@@ -11873,11 +11873,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048798282968044784, guid: 9ff082c26628bb04d830c58031e42eb1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.274
+      value: 3.633
       objectReference: {fileID: 0}
     - target: {fileID: 4048798282968044784, guid: 9ff082c26628bb04d830c58031e42eb1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.668
+      value: 11.277
       objectReference: {fileID: 0}
     - target: {fileID: 4048798282968044784, guid: 9ff082c26628bb04d830c58031e42eb1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21461,6 +21461,7 @@ MonoBehaviour:
   QuestionAnimation: {fileID: 499101813}
   QuestionAudioSource: {fileID: 1361726903}
   Accept: {fileID: 723197204}
+  numberHapticList: {fileID: 0}
 --- !u!1 &1288874838 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 198c666b78a8e984da6fb2305107c6a2, type: 3}
@@ -29461,6 +29462,7 @@ MonoBehaviour:
   QuestionAnimation: {fileID: 1505956636}
   QuestionAudioSource: {fileID: 946489700}
   Accept: {fileID: 2050252327}
+  numberHapticList: {fileID: 0}
 --- !u!1001 &1724634357
 PrefabInstance:
   m_ObjectHideFlags: 0

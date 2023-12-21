@@ -19,6 +19,13 @@ public class NumberInfo
 
 }
 
+public class ButtonInfo
+{
+    public DateTime TimeStamp { get; set; }
+    public bool ButtonTriggered { get; set; }
+
+}
+
 namespace Bhaptics.SDK2
 {
     public class hyperateSocket : MonoBehaviour
@@ -29,6 +36,7 @@ namespace Bhaptics.SDK2
 
         // Textbox to display your heart rate in
         List<NumberInfo> numberInfoList = new List<NumberInfo>();
+        public List<ButtonInfo> numberHapticList = new List<ButtonInfo>();
         Text textBox;
         // Websocket for connection with Hyperate
         WebSocket websocket;
@@ -93,12 +101,13 @@ namespace Bhaptics.SDK2
                     // Change textbox text into the newly received Heart Rate (integer like "86" which represents beats per minute)
                     textBox.text = (string)msg["payload"]["hr"];
                 }
-                if ((DateTime.Now - lastFeedbackTime).TotalSeconds >= 4)
+                if ((DateTime.Now - lastFeedbackTime).TotalSeconds >= 9)
                 {
-                    if (info.Value >= 60)
+                    if (info.Value >= 115)
                     {
                         Debug.Log(info.Value);
-                        BhapticsLibrary.Play("tap_tap_2"); // second haptic feedback
+                        BhapticsLibrary.Play("breathing_guide_10s" +
+                            "9"); // second haptic feedback
                         isHeartRateHigh = false; // reset the state
                         lastFeedbackTime = DateTime.Now;
                         info.HapticFeedbackTriggered = true;
@@ -106,6 +115,7 @@ namespace Bhaptics.SDK2
                 }
 
                 numberInfoList.Add(info);
+
             };
 
             // Send heartbeat message every 25seconds in order to not suspended the connection
@@ -124,6 +134,7 @@ namespace Bhaptics.SDK2
             if (Input.GetKeyDown(KeyCode.T))
             {
                 SaveToCSV(); // CSV 파일로 저장하는 함수 호출
+                SaveToCSVHaptic();
             }
 #if !UNITY_WEBGL || UNITY_EDITOR
             websocket.DispatchMessageQueue();
@@ -151,6 +162,40 @@ namespace Bhaptics.SDK2
         async void SaveToCSV()
         {
             Debug.Log("SAVETOCSV");
+            if (numberInfoList.Count == 0)
+            {
+                Console.WriteLine("저장된 데이터가 없습니다.");
+                return;
+            }
+
+            string csvFilePath = "NumberInfo.csv";
+
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(csvFilePath, false, Encoding.UTF8))
+                {
+                    // CSV 파일 헤더 작성
+                    sw.WriteLine("TimeStamp,Value,HapticFeedback");
+
+                    // 데이터 쓰기
+                    foreach (var info in numberInfoList)
+                    {
+                        string line = $"{info.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss")},{info.Value},{info.HapticFeedbackTriggered}";
+                        sw.WriteLine(line);
+                    }
+                }
+
+                Console.WriteLine($"CSV 파일이 성공적으로 생성되었습니다. 경로: {Path.GetFullPath(csvFilePath)}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"CSV 파일 생성 중 오류 발생: {ex.Message}");
+            }
+        }
+
+        async void SaveToCSVHaptic()
+        {
+            Debug.Log("SAVETOCSVHaptic");
             if (numberInfoList.Count == 0)
             {
                 Console.WriteLine("저장된 데이터가 없습니다.");
