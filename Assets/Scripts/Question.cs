@@ -22,7 +22,7 @@ public class Question : MonoBehaviour
         ButtonInfo info = new ButtonInfo
         {
             TimeStamp = DateTime.Now, // ���� �ð� ���� ����
-            ButtonTriggered = true // Haptic feedback ����
+            ButtonIdentifier = "Question" // Haptic feedback ����
         };
         numberHapticList.AddToButtonList(info);
     }

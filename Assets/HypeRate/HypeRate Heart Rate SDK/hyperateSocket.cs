@@ -22,7 +22,7 @@ public class NumberInfo
 public class ButtonInfo
 {
     public DateTime TimeStamp { get; set; }
-    public bool ButtonTriggered { get; set; }
+    public string ButtonIdentifier { get; set; }
 
 }
 
@@ -216,12 +216,12 @@ namespace Bhaptics.SDK2
                 using (StreamWriter sw = new StreamWriter(csvFilePath, false, Encoding.UTF8))
                 {
                     // CSV 파일 헤더 작성
-                    sw.WriteLine("TimeStamp,ButtonTriggered");
+                    sw.WriteLine("TimeStamp,ButtonIdentifier");
 
                     // 데이터 쓰기
                     foreach (var info in numberButtonList)
                     {
-                        string line = $"{info.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss")},{info.ButtonTriggered}";
+                        string line = $"{info.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss")},{info.ButtonIdentifier}";
                         sw.WriteLine(line);
                     }
                 }
