@@ -10,6 +10,7 @@ public class GameOver : MonoBehaviour
 
     public GameObject GameOverUI;
     public AudioSource GameOverSound;
+    public AudioSource OneLeft;
     public GameObject GameUI;
 
     void Awake()
@@ -30,6 +31,8 @@ public class GameOver : MonoBehaviour
             GameOverUI.SetActive(true);
             GameUI.SetActive(false);
         }
+        if (time <= 60 && time + Time.deltaTime > 60)
+            OneLeft.Play();
 
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time % 60);
