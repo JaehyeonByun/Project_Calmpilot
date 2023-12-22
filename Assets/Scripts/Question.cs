@@ -19,12 +19,12 @@ public class Question : MonoBehaviour
     public void OnButtonClick()
     {
         Invoke("DoQuestion", 2f);
-        /*ButtonInfo info = new ButtonInfo
+        ButtonInfo info = new ButtonInfo
         {
-            TimeStamp = DateTime.Now, // ÇöÀç ½Ã°£ Á¤º¸ ÀúÀå
-            ButtonTriggered = true // Haptic feedback ¿©ºÎ
+            TimeStamp = DateTime.Now, // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            ButtonTriggered = true // Haptic feedback ï¿½ï¿½ï¿½ï¿½
         };
-        numberHapticList.Add(info);*/
+        numberHapticList.AddToButtonList(info);
     }
     public void DoQuestion()
     {

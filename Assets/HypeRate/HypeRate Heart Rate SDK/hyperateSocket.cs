@@ -36,7 +36,7 @@ namespace Bhaptics.SDK2
 
         // Textbox to display your heart rate in
         List<NumberInfo> numberInfoList = new List<NumberInfo>();
-        public List<ButtonInfo> numberHapticList = new List<ButtonInfo>();
+        public List<ButtonInfo> numberButtonList = new List<ButtonInfo>();
         Text textBox;
         // Websocket for connection with Hyperate
         WebSocket websocket;
@@ -159,6 +159,13 @@ namespace Bhaptics.SDK2
             }
         }
 
+        // Public method to add ButtonInfo
+        public void AddToButtonList(ButtonInfo buttonInfo)
+        {
+            // If necessary, add thread safety here
+            numberButtonList.Add(buttonInfo);
+        }
+
         async void SaveToCSV()
         {
             Debug.Log("SAVETOCSV");
@@ -196,25 +203,25 @@ namespace Bhaptics.SDK2
         async void SaveToCSVHaptic()
         {
             Debug.Log("SAVETOCSVHaptic");
-            if (numberInfoList.Count == 0)
+            if (numberButtonList.Count == 0)
             {
                 Console.WriteLine("저장된 데이터가 없습니다.");
                 return;
             }
 
-            string csvFilePath = "NumberInfo.csv";
+            string csvFilePath = "ButtonInfo.csv";
 
             try
             {
                 using (StreamWriter sw = new StreamWriter(csvFilePath, false, Encoding.UTF8))
                 {
                     // CSV 파일 헤더 작성
-                    sw.WriteLine("TimeStamp,Value,HapticFeedback");
+                    sw.WriteLine("TimeStamp,ButtonTriggered");
 
                     // 데이터 쓰기
-                    foreach (var info in numberInfoList)
+                    foreach (var info in numberButtonList)
                     {
-                        string line = $"{info.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss")},{info.Value},{info.HapticFeedbackTriggered}";
+                        string line = $"{info.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss")},{info.ButtonTriggered}";
                         sw.WriteLine(line);
                     }
                 }
