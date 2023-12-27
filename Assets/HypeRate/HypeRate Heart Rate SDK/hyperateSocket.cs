@@ -106,8 +106,7 @@ namespace Bhaptics.SDK2
                     if (info.Value >= 115)
                     {
                         Debug.Log(info.Value);
-                        BhapticsLibrary.Play("breathing_guide_10s" +
-                            "9"); // second haptic feedback
+                        BhapticsLibrary.Play("breathing_guide_10s"); // second haptic feedback
                         isHeartRateHigh = false; // reset the state
                         lastFeedbackTime = DateTime.Now;
                         info.HapticFeedbackTriggered = true;
