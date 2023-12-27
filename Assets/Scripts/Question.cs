@@ -25,6 +25,7 @@ public class Question : MonoBehaviour
             ButtonIdentifier = "Question" // Haptic feedback ����
         };
         numberHapticList.AddToButtonList(info);
+        Debug.Log("Question Info Write");
     }
     public void DoQuestion()
     {

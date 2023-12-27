@@ -18,6 +18,7 @@ public class GotoStage : MonoBehaviour
             ButtonIdentifier = "GoToStage" // Haptic feedback ����
         };
         numberButtonList.AddToButtonList(info);
+        Debug.Log("Go To Stage Info Write");
     }
 
 

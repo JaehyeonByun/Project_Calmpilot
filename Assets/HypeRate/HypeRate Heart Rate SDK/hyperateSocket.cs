@@ -115,6 +115,7 @@ namespace Bhaptics.SDK2
                 }
 
                 numberInfoList.Add(info);
+                Debug.Log("Write HeartRate" + info.Value);
 
             };
 
