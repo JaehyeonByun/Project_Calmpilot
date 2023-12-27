@@ -32,7 +32,7 @@ namespace Bhaptics.SDK2
     {
         // Put your websocket Token ID here
         public string websocketToken2 = "iXiyxevGDyhWff3YnvEfpcCdKMJvArtSYyUkrXF6Siq1qhBrSkB9zsYVjGWhFPh3"; //You don't have one, get it here https://www.hyperate.io/api
-        public string hyperateID3 = "7b4b04";
+        public string hyperateID7 = "7b4b04";
 
         // Textbox to display your heart rate in
         List<NumberInfo> numberInfoList = new List<NumberInfo>();
@@ -104,10 +104,10 @@ namespace Bhaptics.SDK2
                 }
                 if ((DateTime.Now - lastFeedbackTime).TotalSeconds >= 9)
                 {
-                    if (info.Value >= 110)
+                    if (info.Value >= 115)
                     {
                         Debug.Log(info.Value);
-                        BhapticsLibrary.Play("slow_heartbeat"); // second haptic feedback
+                        BhapticsLibrary.Play("breathing_guide_10s"); // second haptic feedback
                         isHeartRateHigh = false; // reset the state
                         lastFeedbackTime = DateTime.Now;
                         info.HapticFeedbackTriggered = true;
@@ -147,7 +147,7 @@ namespace Bhaptics.SDK2
             if (websocket.State == WebSocketState.Open)
             {
                 // Log into the "internal-testing" channel
-                await websocket.SendText("{\"topic\": \"hr:" + hyperateID3 + "\", \"event\": \"phx_join\", \"payload\": {}, \"ref\": 0}");
+                await websocket.SendText("{\"topic\": \"hr:" + hyperateID7 + "\", \"event\": \"phx_join\", \"payload\": {}, \"ref\": 0}");
             }
         }
         async void SendHeartbeat()
