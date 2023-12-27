@@ -13,24 +13,19 @@ public class Question : MonoBehaviour
     public Animator QuestionAnimation;
     public AudioSource QuestionAudioSource;
     public GameObject Accept;
-    public hyperateSocket numberHapticList;
+    public hyperateSocket numberButtonList;
 
 
     public void OnButtonClick()
     {
         Invoke("DoQuestion", 2f);
-        ButtonInfo info = new ButtonInfo
-        {
-            TimeStamp = DateTime.Now, // ���� �ð� ���� ����
-            ButtonIdentifier = "Question" // Haptic feedback ����
-        };
-        numberHapticList.AddToButtonList(info);
-        Debug.Log("Question Info Write");
+
     }
     public void DoQuestion()
     {
         QuestionAnimation.SetBool("Question", true);
         QuestionAudioSource.Play();
+        Debug.Log("Question Info Write" + DateTime.Now);
         Invoke("DoAccept", 3f);
     }
     public void DoAccept()

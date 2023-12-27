@@ -50,6 +50,7 @@ namespace Bhaptics.SDK2
 
         async void Start()
         {
+            numberButtonList = new List<ButtonInfo>();
             textBox = GetComponent<Text>();
 
             websocket = new WebSocket("wss://app.hyperate.io/socket/websocket?token=" + websocketToken2);
@@ -103,10 +104,10 @@ namespace Bhaptics.SDK2
                 }
                 if ((DateTime.Now - lastFeedbackTime).TotalSeconds >= 9)
                 {
-                    if (info.Value >= 115)
+                    if (info.Value >= 110)
                     {
                         Debug.Log(info.Value);
-                        BhapticsLibrary.Play("breathing_guide_10s"); // second haptic feedback
+                        BhapticsLibrary.Play("slow_heartbeat"); // second haptic feedback
                         isHeartRateHigh = false; // reset the state
                         lastFeedbackTime = DateTime.Now;
                         info.HapticFeedbackTriggered = true;
@@ -114,7 +115,7 @@ namespace Bhaptics.SDK2
                 }
 
                 numberInfoList.Add(info);
-                Debug.Log("Write HeartRate" + info.Value);
+                // Debug.Log("Write HeartRate" + info.Value);
 
             };
 
@@ -134,7 +135,7 @@ namespace Bhaptics.SDK2
             if (Input.GetKeyDown(KeyCode.T))
             {
                 SaveToCSV(); // CSV 파일로 저장하는 함수 호출
-                SaveToCSVHaptic();
+                // SaveToCSVHaptic();
             }
 #if !UNITY_WEBGL || UNITY_EDITOR
             websocket.DispatchMessageQueue();

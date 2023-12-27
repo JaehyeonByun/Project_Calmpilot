@@ -14,12 +14,6 @@ public class EndAnswer : MonoBehaviour
     {
         Answer.SetActive(false);
         Next.SetActive(true);
-        ButtonInfo info = new ButtonInfo
-        {
-            TimeStamp = DateTime.Now, // ���� �ð� ���� ����
-            ButtonIdentifier = "Answer" // Haptic feedback ����
-        };
-        numberHapticList.AddToButtonList(info);
-        Debug.Log("Answer Info Write");
+        Debug.Log("End Answer" + DateTime.Now);
     }
 }

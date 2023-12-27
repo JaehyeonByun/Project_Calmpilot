@@ -12,13 +12,7 @@ public class GotoStage : MonoBehaviour
         {
         ClickSound.Play();
         GameManager.instance.Frequency();
-        ButtonInfo info = new ButtonInfo
-        {
-            TimeStamp = DateTime.Now, // ���� �ð� ���� ����
-            ButtonIdentifier = "GoToStage" // Haptic feedback ����
-        };
-        numberButtonList.AddToButtonList(info);
-        Debug.Log("Go To Stage Info Write");
+        Debug.Log("Go To Stage" + DateTime.Now);
     }
 
 

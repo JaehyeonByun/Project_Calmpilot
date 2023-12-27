@@ -12968,6 +12968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Answer: {fileID: 805328207}
   Next: {fileID: 614769809}
+  numberHapticList: {fileID: 0}
 --- !u!1 &808024184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6015bd03a5687ec46ab4302cf9398437, type: 3}
@@ -32406,6 +32407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Answer: {fileID: 1775266322}
   Next: {fileID: 1858323221}
+  numberHapticList: {fileID: 0}
 --- !u!114 &1775266325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34020,7 +34022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1833580705
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35413,7 +35415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1901206463
 RectTransform:
   m_ObjectHideFlags: 0
