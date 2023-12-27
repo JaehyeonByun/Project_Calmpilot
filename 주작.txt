@@ -1,0 +1,38 @@
+주작 12
+질문1 Question Info Write2023-12-27 오후 10:47:40
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+질문 2Question Info Write2023-12-27 오후 10:48:10
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+
+주작13
+Question Info Write2023-12-27 오후 10:54:22
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+Question Info Write2023-12-27 오후 10:55:21
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+
+주작14
+Question Info Write2023-12-27 오후 11:04:37
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+Question Info Write2023-12-27 오후 11:05:42
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+
+주작 15
+체크못함 ㅠㅠ
+
+주작 16
+Question Info Write2023-12-27 오후 11:22:25
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+
+Question Info Write2023-12-27 오후 11:23:10
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+
+
+
