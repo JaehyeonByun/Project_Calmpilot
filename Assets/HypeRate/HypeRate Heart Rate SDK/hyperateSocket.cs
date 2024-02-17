@@ -144,13 +144,6 @@ namespace Bhaptics.SDK2
             websocket.DispatchMessageQueue();
 #endif
         }
-
-        
-        public void OnButtonClick()
-        {
-            SaveToCSV();
-        }
-
         async void SendWebSocketMessage()
         {
             if (websocket.State == WebSocketState.Open)

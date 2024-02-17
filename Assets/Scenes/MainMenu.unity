@@ -2054,6 +2054,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 1125210247}
   NextPage: {fileID: 1602896557}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &198439359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3482,12 +3487,12 @@ GameObject:
   - component: {fileID: 319811041}
   - component: {fileID: 319811040}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: heartrate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &319811039
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3540,7 +3545,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC0AC\uC6A9\uC790\uC758 \uC2E4\uC2DC\uAC04 \uC2EC\uBC15\uC218\uC785\uB2C8\uB2E4 "
+  m_Text: "\uC2E4\uC2DC\uAC04 \uC2EC\uBC15\uC218"
 --- !u!222 &319811041
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4617,6 +4622,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 111341692}
   NextPage: {fileID: 1454049309}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &443787061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6274,6 +6284,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 798907394}
   NextPage: {fileID: 111341692}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &580411963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7983,6 +7998,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 1325631659}
   NextPage: {fileID: 38239138}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &681942593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9382,7 +9402,7 @@ GameObject:
   - component: {fileID: 785818294}
   - component: {fileID: 785818293}
   m_Layer: 5
-  m_Name: Text (3)
+  m_Name: question
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9395,17 +9415,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785818291}
-  m_LocalRotation: {x: -0, y: 0.9989833, z: -0, w: -0.045081567}
+  m_LocalRotation: {x: -0, y: 0.9995638, z: -0, w: -0.02953459}
   m_LocalPosition: {x: 0, y: 0, z: -1.346}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1955210662}
-  m_LocalEulerAnglesHint: {x: 0, y: 185.168, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 183.385, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.81, y: 0.5992459}
-  m_SizeDelta: {x: 1434.4136, y: 337.9735}
+  m_AnchoredPosition: {x: -2.7076, y: 0.132}
+  m_SizeDelta: {x: 1639.9971, y: 401.0663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &785818293
 MonoBehaviour:
@@ -9429,7 +9449,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
+    m_FontSize: 85
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -9440,8 +9460,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBAA8\uB2C8\uD130\uB97C \uD074\uB9AD\uD558\uBA74 \uB300\uBCF8\uACFC PPT\uB97C
-    \uB118\uAE38 \uC218 \uC788\uC2B5\uB2C8\uB2E4. "
+  m_Text: "\uCCAD\uC911\uC774 \uBD88\uC2DC\uC5D0 \uC9C8\uBB38\uC744 \uAC74\uB0BC\uC218\uB3C4
+    \uC788\uC2B5\uB2C8\uB2E4. \n\uB0B4\uC6A9\uC744 \uC798 \uC219\uC9C0\uD558\uC138\uC694. "
 --- !u!222 &785818294
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9857,7 +9877,6 @@ GameObject:
   - component: {fileID: 829192005}
   - component: {fileID: 829192004}
   - component: {fileID: 829192003}
-  - component: {fileID: 829192008}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -9900,6 +9919,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 1118730368}
   NextPage: {fileID: 29614381}
+  Hannounce: {fileID: 319811038}
+  PPTannounce: {fileID: 971401253}
+  Questannounce: {fileID: 785818291}
+  scripts: {fileID: 2036675819}
+  ppt: {fileID: 1312741582}
 --- !u!114 &829192004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9944,18 +9968,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 829192008}
-        m_TargetAssemblyTypeName: Bhaptics.SDK2.hyperateSocket, endel.nativewebsocket
-        m_MethodName: OnButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 829192003}
         m_TargetAssemblyTypeName: NextPageButton, Assembly-CSharp
         m_MethodName: OnButtonClick
@@ -10006,20 +10018,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829192001}
   m_CullTransparentMesh: 1
---- !u!114 &829192008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829192001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da35206656ff461f9ea567f58b84144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  websocketToken2: iXiyxevGDyhWff3YnvEfpcCdKMJvArtSYyUkrXF6Siq1qhBrSkB9zsYVjGWhFPh3
-  hyperateID7: 7b4b04
 --- !u!1 &839267109
 GameObject:
   m_ObjectHideFlags: 0
@@ -10253,6 +10251,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 38239138}
   NextPage: {fileID: 798907394}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &863467093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11162,6 +11165,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 798907394}
   NextPage: {fileID: 0}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &948512035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11689,12 +11697,12 @@ GameObject:
   - component: {fileID: 971401256}
   - component: {fileID: 971401255}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: PPT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &971401254
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11890,6 +11898,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 11972518428265092, guid: be8bb03efd14c07469a53a048b9bce3c, type: 3}
   m_PrefabInstance: {fileID: 973110633}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &980557447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 980557449}
+  - component: {fileID: 980557448}
+  m_Layer: 0
+  m_Name: warn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &980557448
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980557447}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9dd2a4c4b0987c442a5e4a35d5220c32, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &980557449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980557447}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3902996, y: 0.612788, z: 31.575596}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &992801740
 GameObject:
   m_ObjectHideFlags: 0
@@ -14744,6 +14880,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 1150786141}
   NextPage: {fileID: 111341692}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &1318760840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15474,6 +15615,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 1602896557}
   NextPage: {fileID: 1150786141}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &1408310000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15703,6 +15849,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 798907394}
   NextPage: {fileID: 0}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &1426429712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16014,7 +16165,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1448119143}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1448119145}
+        m_TargetAssemblyTypeName: ScriptNext, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1448323112
 GameObject:
   m_ObjectHideFlags: 0
@@ -16762,12 +16925,12 @@ GameObject:
   - component: {fileID: 1500993634}
   - component: {fileID: 1500993633}
   m_Layer: 5
-  m_Name: Text (4)
+  m_Name: warning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1500993632
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18315,6 +18478,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 798907394}
   NextPage: {fileID: 0}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &1606475692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19768,6 +19936,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 1524496183}
   NextPage: {fileID: 1125210247}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &1679134299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21228,6 +21401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 0}
+  warning: {fileID: 980557448}
+  obj: {fileID: 743329167}
 --- !u!114 &1869278321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21682,6 +21857,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 1150786141}
   NextPage: {fileID: 1118730368}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &1909101187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21831,6 +22011,11 @@ MonoBehaviour:
   ClickSound: {fileID: 1727386952}
   Page: {fileID: 1454049309}
   NextPage: {fileID: 1524496183}
+  Hannounce: {fileID: 0}
+  PPTannounce: {fileID: 0}
+  Questannounce: {fileID: 0}
+  scripts: {fileID: 0}
+  ppt: {fileID: 0}
 --- !u!114 &1912522986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26289,3 +26474,4 @@ SceneRoots:
   - {fileID: 252797163}
   - {fileID: 1798623776}
   - {fileID: 1687037826}
+  - {fileID: 980557449}
