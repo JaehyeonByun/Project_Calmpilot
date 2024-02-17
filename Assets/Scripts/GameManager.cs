@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     }
     public void Frequency()
     {
+        //OVRScreenFade.instance.FadeOut();
         SceneManager.LoadScene("Room1");
         gameState = GameState.Frequency;
 ;

@@ -32,7 +32,7 @@ namespace Bhaptics.SDK2
     {
         // Put your websocket Token ID here
         public string websocketToken2 = "iXiyxevGDyhWff3YnvEfpcCdKMJvArtSYyUkrXF6Siq1qhBrSkB9zsYVjGWhFPh3"; //You don't have one, get it here https://www.hyperate.io/api
-        public string hyperateID7 = "7b4b04";
+        public string hyperateID7 = "03ae20";
 
         // Textbox to display your heart rate in
         List<NumberInfo> numberInfoList = new List<NumberInfo>();
@@ -129,9 +129,12 @@ namespace Bhaptics.SDK2
             // waiting for messages
             await websocket.Connect();
         }
+  
 
         void Update()
-        {
+
+        {  
+
             if (Input.GetKeyDown(KeyCode.T))
             {
                 SaveToCSV(); // CSV 파일로 저장하는 함수 호출
@@ -140,6 +143,12 @@ namespace Bhaptics.SDK2
 #if !UNITY_WEBGL || UNITY_EDITOR
             websocket.DispatchMessageQueue();
 #endif
+        }
+
+        
+        public void OnButtonClick()
+        {
+            SaveToCSV();
         }
 
         async void SendWebSocketMessage()
@@ -167,7 +176,8 @@ namespace Bhaptics.SDK2
             numberButtonList.Add(buttonInfo);
         }
 
-        async void SaveToCSV()
+        //async void SaveToCSV()
+        async public void SaveToCSV()
         {
             Debug.Log("SAVETOCSV");
             if (numberInfoList.Count == 0)
