@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B3F5FD34-CF19-9000-DE8D-CEF3C985905D}</ProjectGuid>
+    <ProjectGuid>{12A85441-9976-B523-AEA5-AA273B3697DB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -1568,27 +1568,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Bhaptics.SDK2.csproj">
-      <Project>{68D8A217-CB16-37CF-C069-1CAB3AD6EDCF}</Project>
+      <Project>{A8A1D649-B1CA-DAF4-CCE7-BEA050E7B64A}</Project>
       <Name>Bhaptics.SDK2</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj">
-      <Project>{F05F9DCE-446A-A00C-1F70-09D92238CAFE}</Project>
+      <Project>{7963A22E-4E15-BF0A-6813-D8881E8094A2}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets</Name>
     </ProjectReference>
     <ProjectReference Include="Bhaptics.SDK2.Editor.csproj">
-      <Project>{3721AC00-9611-5D05-AD5E-D29DA7C1C48E}</Project>
+      <Project>{A203B0EA-CD2A-BC52-1EE7-887BBEAD16B7}</Project>
       <Name>Bhaptics.SDK2.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="endel.nativewebsocket.csproj">
-      <Project>{B1D82D93-06B2-8A62-8D97-0A1F9789450C}</Project>
+      <Project>{A5278E0D-1D00-6E15-5E5E-132039DB5C88}</Project>
       <Name>endel.nativewebsocket</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.Dictation.csproj">
-      <Project>{62637309-F16B-A39F-5281-B035642EC204}</Project>
+      <Project>{C0BBE3F1-B3B4-0B16-4A49-64E1FA034DAF}</Project>
       <Name>Meta.Voice.Samples.Dictation</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
-      <Project>{01A93A5C-9459-489E-C474-BCD78CAA8955}</Project>
+      <Project>{8911448A-C591-B130-47A5-DB0576665C6F}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor</Name>
     </ProjectReference>
   </ItemGroup>

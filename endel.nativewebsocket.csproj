@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B1D82D93-06B2-8A62-8D97-0A1F9789450C}</ProjectGuid>
+    <ProjectGuid>{A5278E0D-1D00-6E15-5E5E-132039DB5C88}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>endel.nativewebsocket</AssemblyName>
@@ -967,7 +967,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Bhaptics.SDK2.csproj">
-      <Project>{68D8A217-CB16-37CF-C069-1CAB3AD6EDCF}</Project>
+      <Project>{A8A1D649-B1CA-DAF4-CCE7-BEA050E7B64A}</Project>
       <Name>Bhaptics.SDK2</Name>
     </ProjectReference>
   </ItemGroup>

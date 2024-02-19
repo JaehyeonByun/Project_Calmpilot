@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3721AC00-9611-5D05-AD5E-D29DA7C1C48E}</ProjectGuid>
+    <ProjectGuid>{A203B0EA-CD2A-BC52-1EE7-887BBEAD16B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Bhaptics.SDK2.Editor</AssemblyName>
@@ -996,7 +996,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Bhaptics.SDK2.csproj">
-      <Project>{68D8A217-CB16-37CF-C069-1CAB3AD6EDCF}</Project>
+      <Project>{A8A1D649-B1CA-DAF4-CCE7-BEA050E7B64A}</Project>
       <Name>Bhaptics.SDK2</Name>
     </ProjectReference>
   </ItemGroup>
