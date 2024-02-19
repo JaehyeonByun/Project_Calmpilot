@@ -10,7 +10,7 @@ public class ButtonHide : MonoBehaviour
     public void OnButtonClick()
     {
         hide1.SetActive(false);
-        hide2.SetActive(false);
+        hide1.SetActive(false);
     }
 
     // Update is called once per frame

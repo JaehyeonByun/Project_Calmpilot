@@ -1,4 +1,3 @@
-using Bhaptics.SDK2;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,9 +9,6 @@ public class Timer : MonoBehaviour
 
     public TMP_Text timeText;
     private float time;
-    public AudioSource warning;
-    public GameObject obj;
-
     private void Awake()
     {
         time = 180f;
@@ -21,22 +17,10 @@ public class Timer : MonoBehaviour
     {
         if (timeText == null)
             timeText = GameObject.Find("Timer").GetComponent<TMP_Text>();
-
         if (time > 0)
-        {
             time -= Time.deltaTime;
-            if (time > 30f)
-            {
-                warning.Play();
-            }
-        }
         else
-        {
-            obj.GetComponent<hyperateSocket>().SaveToCSV();
             GameManager.instance.Frequency();
-        }
-
-
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time % 60);
 
