@@ -110,7 +110,12 @@
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\XRKnob.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\LaunchProjectile.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\VoiceLevelDetector.cs" />
+=======
+    <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent2D.cs" />
+>>>>>>> parent of 0dbfa40 (.)
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Building Shaker.cs" />
     <Compile Include="Assets\Scripts\Timer3.cs" />
@@ -1571,10 +1576,13 @@
       <Project>{A5278E0D-1D00-6E15-5E5E-132039DB5C88}</Project>
       <Name>endel.nativewebsocket</Name>
     </ProjectReference>
+<<<<<<< HEAD
     <ProjectReference Include="Meta.Voice.Samples.Dictation.csproj">
       <Project>{C0BBE3F1-B3B4-0B16-4A49-64E1FA034DAF}</Project>
       <Name>Meta.Voice.Samples.Dictation</Name>
     </ProjectReference>
+=======
+>>>>>>> parent of 0dbfa40 (.)
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
       <Project>{8911448A-C591-B130-47A5-DB0576665C6F}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor</Name>

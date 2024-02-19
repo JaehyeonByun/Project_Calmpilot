@@ -15,8 +15,12 @@ public class NextPageButton : MonoBehaviour
     public GameObject scripts;
     public GameObject ppt;
 
+<<<<<<< HEAD
 
 
+=======
+    // Start is called before the first frame update
+>>>>>>> parent of 0dbfa40 (.)
     public void OnButtonClick()
     {
         ClickSound.Play(); // 음향 재생
