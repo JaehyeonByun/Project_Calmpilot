@@ -14,6 +14,7 @@ public class NextPageButton : MonoBehaviour
     public GameObject scripts;
     public GameObject ppt;
 
+
     // Start is called before the first frame update
     public void OnButtonClick()
     {

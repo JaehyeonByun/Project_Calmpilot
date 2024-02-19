@@ -121,6 +121,7 @@
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent2D.cs" />
+    <Compile Include="Assets\Scripts\VoiceLevelDetector.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Building Shaker.cs" />
     <Compile Include="Assets\Scripts\Timer3.cs" />
@@ -1581,6 +1582,10 @@
     <ProjectReference Include="endel.nativewebsocket.csproj">
       <Project>{B1D82D93-06B2-8A62-8D97-0A1F9789450C}</Project>
       <Name>endel.nativewebsocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Samples.Dictation.csproj">
+      <Project>{62637309-F16B-A39F-5281-B035642EC204}</Project>
+      <Name>Meta.Voice.Samples.Dictation</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
       <Project>{01A93A5C-9459-489E-C474-BCD78CAA8955}</Project>
