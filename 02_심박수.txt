@@ -1,0 +1,33 @@
+115 15:28:23
+UnityEngine.Debug:Log (object)
+Bhaptics.SDK2.hyperateSocket/<>c__DisplayClass10_0:<Start>b__3 (byte[]) (at Assets/HypeRate/HypeRate Heart Rate SDK/hyperateSocket.cs:109)
+NativeWebSocket.WebSocket:DispatchMessageQueue () (at Assets/HypeRate/HypeRate Heart Rate SDK/WebSocket.cs:637)
+Bhaptics.SDK2.hyperateSocket:Update () (at Assets/HypeRate/HypeRate Heart Rate SDK/hyperateSocket.cs:141)
+
+
+
+Go To Stage2023-12-27 오후 3:29:05
+UnityEngine.Debug:Log (object)
+GotoStage:GoButtonClick () (at Assets/Scripts/GotoStage.cs:15)
+UnityEngine.XR.Interaction.Toolkit.UI.UIInputModule:Update () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@2.5.2/Runtime/UI/UIInputModule.cs:146)
+
+Question Info Write2023-12-27 오후 3:31:15
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+
+End Answer2023-12-27 오후 3:32:00
+UnityEngine.Debug:Log (object)
+EndAnswer:OnButtonClick () (at Assets/Scripts/EndAnswer.cs:17)
+UnityEngine.XR.Interaction.Toolkit.UI.UIInputModule:Update () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@2.5.2/Runtime/UI/UIInputModule.cs:146)
+
+Question Info Write2023-12-27 오후 3:32:39
+UnityEngine.Debug:Log (object)
+Question:DoQuestion () (at Assets/Scripts/Question.cs:28)
+
+15:33:10 1분
+
+End Answer2023-12-27 오후 3:33:25
+UnityEngine.Debug:Log (object)
+EndAnswer:OnButtonClick () (at Assets/Scripts/EndAnswer.cs:17)
+UnityEngine.XR.Interaction.Toolkit.UI.UIInputModule:Update () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@2.5.2/Runtime/UI/UIInputModule.cs:146)
+

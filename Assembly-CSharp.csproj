@@ -114,7 +114,6 @@
     <Compile Include="Assets\Scripts\earthquake.cs" />
     <Compile Include="Assets\Scripts\Timer1.cs" />
     <Compile Include="Assets\Scripts\ReadyPresentation.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\XRKnob.cs" />
     <Compile Include="Assets\Assets\VRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\SphereExploder.cs" />
