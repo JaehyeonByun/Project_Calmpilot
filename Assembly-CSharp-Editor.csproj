@@ -1559,10 +1559,13 @@
       <Name>endel.nativewebsocket</Name>
     </ProjectReference>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ProjectReference Include="Meta.Voice.Samples.Dictation.csproj">
       <Project>{C0BBE3F1-B3B4-0B16-4A49-64E1FA034DAF}</Project>
       <Name>Meta.Voice.Samples.Dictation</Name>
     </ProjectReference>
+=======
+>>>>>>> parent of 0dbfa40 (.)
 =======
 >>>>>>> parent of 0dbfa40 (.)
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">

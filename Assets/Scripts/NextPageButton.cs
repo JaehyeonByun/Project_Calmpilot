@@ -16,9 +16,12 @@ public class NextPageButton : MonoBehaviour
     public GameObject ppt;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+=======
+>>>>>>> parent of 0dbfa40 (.)
     // Start is called before the first frame update
 >>>>>>> parent of 0dbfa40 (.)
     public void OnButtonClick()
