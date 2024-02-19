@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{68D8A217-CB16-37CF-C069-1CAB3AD6EDCF}</ProjectGuid>
+    <ProjectGuid>{A8A1D649-B1CA-DAF4-CCE7-BEA050E7B64A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Bhaptics.SDK2</AssemblyName>
