@@ -8,6 +8,7 @@ public class NextPageButton : MonoBehaviour
     public GameObject Page;
     public GameObject NextPage;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public GameObject Hannounce;
     public GameObject PPTannounce;
     public GameObject Questannounce;
@@ -16,6 +17,8 @@ public class NextPageButton : MonoBehaviour
     public GameObject ppt;
 
 
+=======
+>>>>>>> parent of 777a724 (.)
 =======
 >>>>>>> parent of 777a724 (.)
     // Start is called before the first frame update
