@@ -1,3 +1,4 @@
+using Bhaptics.SDK2;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,6 +7,9 @@ using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
 public class Timer : MonoBehaviour
 {
+    public GameObject heart;
+
+    public AudioSource Warning;
 
     public TMP_Text timeText;
     private float time;
@@ -18,9 +22,17 @@ public class Timer : MonoBehaviour
         if (timeText == null)
             timeText = GameObject.Find("Timer").GetComponent<TMP_Text>();
         if (time > 0)
+        {
             time -= Time.deltaTime;
-        else
+            if(time > 30)
+            {
+                Warning.Play();
+            }
+        }
+        else {
+            heart.GetComponent<hyperateSocket>().SaveToCSV_Ready();
             GameManager.instance.Frequency();
+        }
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time % 60);
 
