@@ -9,7 +9,6 @@ using NativeWebSocket;
 
 using System.IO;
 using System.Text;
-using System.Linq;
 
 
 public class NumberInfo
@@ -33,7 +32,7 @@ namespace Bhaptics.SDK2
     {
         // Put your websocket Token ID here
         public string websocketToken2 = "iXiyxevGDyhWff3YnvEfpcCdKMJvArtSYyUkrXF6Siq1qhBrSkB9zsYVjGWhFPh3"; //You don't have one, get it here https://www.hyperate.io/api
-        public string hyperateID7 = "03ae20";
+        public string hyperateID7 = "7b4b04";
 
         // Textbox to display your heart rate in
         List<NumberInfo> numberInfoList = new List<NumberInfo>();
@@ -47,8 +46,6 @@ namespace Bhaptics.SDK2
         private bool isHeartRateHigh = false; // flag to track if heart rate is high
         private float timeSinceHighHeartRate = 0f; // time since heart rate first went high
         private DateTime lastFeedbackTime = DateTime.MinValue;
-
-
 
 
         async void Start()
@@ -94,13 +91,6 @@ namespace Bhaptics.SDK2
                     HapticFeedbackTriggered = false // Haptic feedback 여부
                 };
 
-                /*int heartRateChange = 0;
-                if (numberInfoList.Count > 0)
-                {
-                    heartRateChange = info.Value - numberInfoList.Last().Value;
-                }*/
-       
-
                 // CSV 파일 생성 및 데이터 쓰기
                 using (StreamWriter sw = new StreamWriter(filePath, false, Encoding.UTF8))
                 {
@@ -112,38 +102,10 @@ namespace Bhaptics.SDK2
                     // Change textbox text into the newly received Heart Rate (integer like "86" which represents beats per minute)
                     textBox.text = (string)msg["payload"]["hr"];
                 }
-
-                if (numberInfoList.Count >= 5) // 5초동안 심박수 10증가
-                {
-                    int previousHeartRate = numberInfoList[numberInfoList.Count - 5].Value;
-                    int heartRateChange = info.Value - previousHeartRate;
-
-                    if (heartRateChange >= 10 && (DateTime.Now - lastFeedbackTime).TotalSeconds >= 9)
-                    {
-                        Debug.Log("feed");
-                        Debug.Log(info.Value);
-                        BhapticsLibrary.Play("breathing_guide_10s");
-                        lastFeedbackTime = DateTime.Now; // Update last feedback time
-                        info.HapticFeedbackTriggered = true;
-                    }
-                }
-           
-            /* 이전 심박과 비교
-            if (Math.Abs(heartRateChange) >= 10 && (DateTime.Now - lastFeedbackTime).TotalSeconds >= 9)
-                {
-                    Debug.Log("feed");
-                    Debug.Log(info.Value);
-                    BhapticsLibrary.Play("breathing_guide_10s");
-                    isHeartRateHigh = false; // reset the state
-                    lastFeedbackTime = DateTime.Now;
-                    info.HapticFeedbackTriggered = true;
-                }*/
-
-              if ((DateTime.Now - lastFeedbackTime).TotalSeconds >= 9) // 절대 심박수 120이상
+                if ((DateTime.Now - lastFeedbackTime).TotalSeconds >= 9)
                 {
                     if (info.Value >= 115)
                     {
-
                         Debug.Log(info.Value);
                         BhapticsLibrary.Play("breathing_guide_10s"); // second haptic feedback
                         isHeartRateHigh = false; // reset the state
@@ -167,12 +129,9 @@ namespace Bhaptics.SDK2
             // waiting for messages
             await websocket.Connect();
         }
-  
 
         void Update()
-
-        {  
-
+        {
             if (Input.GetKeyDown(KeyCode.T))
             {
                 SaveToCSV(); // CSV 파일로 저장하는 함수 호출
@@ -181,12 +140,6 @@ namespace Bhaptics.SDK2
 #if !UNITY_WEBGL || UNITY_EDITOR
             websocket.DispatchMessageQueue();
 #endif
-        }
-
-        
-        public void OnButtonClick()
-        {
-            SaveToCSV();
         }
 
         async void SendWebSocketMessage()
@@ -214,8 +167,7 @@ namespace Bhaptics.SDK2
             numberButtonList.Add(buttonInfo);
         }
 
-        //async void SaveToCSV()
-        async public void SaveToCSV()
+        async void SaveToCSV()
         {
             Debug.Log("SAVETOCSV");
             if (numberInfoList.Count == 0)

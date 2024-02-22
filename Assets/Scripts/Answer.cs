@@ -9,7 +9,7 @@ public class Answer : MonoBehaviour
     public AudioSource NoAns;
     public GameObject EndAnswer;
     public GameObject Accept;
- 
+    public GameObject Next;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class Answer : MonoBehaviour
     public void OnButtonClick()
     {
         Accept.SetActive(false);
-
+        Next.SetActive(false);
         QuestionAnimation.SetBool("Question", false);
         QuestionAudioSource.Play();
         Invoke("DoEndAnswer", 8f);
