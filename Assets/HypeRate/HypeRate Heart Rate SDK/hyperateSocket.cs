@@ -32,7 +32,7 @@ namespace Bhaptics.SDK2
     {
         // Put your websocket Token ID here
         public string websocketToken2 = "iXiyxevGDyhWff3YnvEfpcCdKMJvArtSYyUkrXF6Siq1qhBrSkB9zsYVjGWhFPh3"; //You don't have one, get it here https://www.hyperate.io/api
-        public string hyperateID7 = "7b4b04";
+        public string hyperateID7 = "03ae20";
 
         // Textbox to display your heart rate in
         List<NumberInfo> numberInfoList = new List<NumberInfo>();
@@ -167,7 +167,7 @@ namespace Bhaptics.SDK2
             numberButtonList.Add(buttonInfo);
         }
 
-        async void SaveToCSV()
+        public async void SaveToCSV()
         {
             Debug.Log("SAVETOCSV");
             if (numberInfoList.Count == 0)
@@ -200,6 +200,75 @@ namespace Bhaptics.SDK2
                 Console.WriteLine($"CSV 파일 생성 중 오류 발생: {ex.Message}");
             }
         }
+
+        public async void SaveToCSV_Ready()
+        {
+            Debug.Log("SAVETOCSV");
+            if (numberInfoList.Count == 0)
+            {
+                Console.WriteLine("저장된 데이터가 없습니다.");
+                return;
+            }
+
+            string csvFilePath = "Ready Heartrate.csv";
+
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(csvFilePath, false, Encoding.UTF8))
+                {
+                    // CSV 파일 헤더 작성
+                    sw.WriteLine("TimeStamp,Value,HapticFeedback");
+
+                    // 데이터 쓰기
+                    foreach (var info in numberInfoList)
+                    {
+                        string line = $"{info.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss")},{info.Value},{info.HapticFeedbackTriggered}";
+                        sw.WriteLine(line);
+                    }
+                }
+
+                Console.WriteLine($"CSV 파일이 성공적으로 생성되었습니다. 경로: {Path.GetFullPath(csvFilePath)}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"CSV 파일 생성 중 오류 발생: {ex.Message}");
+            }
+        }
+
+        public async void SaveToCSV_PR()
+        {
+            Debug.Log("SAVETOCSV");
+            if (numberInfoList.Count == 0)
+            {
+                Console.WriteLine("저장된 데이터가 없습니다.");
+                return;
+            }
+
+            string csvFilePath = "Public Speaking Heartrate.csv";
+
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(csvFilePath, false, Encoding.UTF8))
+                {
+                    // CSV 파일 헤더 작성
+                    sw.WriteLine("TimeStamp,Value,HapticFeedback");
+
+                    // 데이터 쓰기
+                    foreach (var info in numberInfoList)
+                    {
+                        string line = $"{info.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss")},{info.Value},{info.HapticFeedbackTriggered}";
+                        sw.WriteLine(line);
+                    }
+                }
+
+                Console.WriteLine($"CSV 파일이 성공적으로 생성되었습니다. 경로: {Path.GetFullPath(csvFilePath)}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"CSV 파일 생성 중 오류 발생: {ex.Message}");
+            }
+        }
+
 
         async void SaveToCSVHaptic()
         {
