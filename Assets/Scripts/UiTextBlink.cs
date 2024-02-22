@@ -13,7 +13,6 @@ public class UiTextBlink : MonoBehaviour
 
     void Start()
     {
-        text.text = "<color=#FF0000>녹화</color> 진행중";
         StartCoroutine(Blink());
     }
 

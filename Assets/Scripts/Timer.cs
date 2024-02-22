@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     private float time;
     private void Awake()
     {
-        time = 120f;
+        time = 60f;
     }
     private void Update()
     {

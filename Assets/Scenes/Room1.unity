@@ -2809,7 +2809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1416014707}
   PPT: {fileID: 766117818}
   NextScript: {fileID: 1078496032}
@@ -5187,7 +5187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1192384756}
   PPT: {fileID: 365492800}
   NextScript: {fileID: 958335746}
@@ -6590,7 +6590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1551984223}
   PPT: {fileID: 934362907}
   NextScript: {fileID: 1192384756}
@@ -9855,7 +9855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 533110342}
   PPT: {fileID: 1345661377}
   NextScript: {fileID: 1589520028}
@@ -11299,7 +11299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 496016032}
   PPT: {fileID: 1711936448}
   NextScript: {fileID: 787832128}
@@ -14705,7 +14705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1494788231}
   PPT: {fileID: 1171453733}
   NextScript: {fileID: 2087067680}
@@ -16128,7 +16128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1589520028}
   PPT: {fileID: 1318049667}
   NextScript: {fileID: 1416014707}
@@ -18310,7 +18310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 34.496, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.905, y: 0.583}
+  m_AnchoredPosition: {x: 8.785, y: 0.583}
   m_SizeDelta: {x: 640, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1187296023
@@ -18346,7 +18346,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB179\uD654 \uC9C4\uD589\uC911"
+  m_Text: "\uB179\uD654\uC911"
 --- !u!222 &1187296024
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18422,7 +18422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 958335746}
   PPT: {fileID: 1898645820}
   NextScript: {fileID: 1790894724}
@@ -19440,7 +19440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1615746565}
   PPT: {fileID: 1630943864}
   NextScript: {fileID: 1494788231}
@@ -24290,7 +24290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 2087067680}
   PPT: {fileID: 1790532827}
   NextScript: {fileID: 533110342}
@@ -26702,7 +26702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1834853830}
   PPT: {fileID: 1601157316}
   NextScript: {fileID: 215451903}
@@ -27298,7 +27298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1790894724}
   PPT: {fileID: 2090732571}
   NextScript: {fileID: 496016032}
@@ -28579,7 +28579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 1078496032}
   PPT: {fileID: 1446713966}
   NextScript: {fileID: 978734394}
@@ -38471,7 +38471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 215451903}
   PPT: {fileID: 714207863}
   NextScript: {fileID: 1551984223}
