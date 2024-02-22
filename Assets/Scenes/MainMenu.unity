@@ -240,7 +240,9 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7533267812371997272, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
+    - {fileID: 1965173956225339323, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
@@ -272,16 +274,6 @@ MeshRenderer:
 --- !u!23 &15265289 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6351342608403982435, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
-  m_PrefabInstance: {fileID: 15265283}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &15265290 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2948161549530087515, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
-  m_PrefabInstance: {fileID: 15265283}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &15265291 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 7431483243009518269, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
   m_PrefabInstance: {fileID: 15265283}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &15265292 stripped
@@ -342,16 +334,6 @@ GameObject:
 --- !u!1 &15265303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1909246212364573892, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
-  m_PrefabInstance: {fileID: 15265283}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &15265304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7533267812371997272, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
-  m_PrefabInstance: {fileID: 15265283}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &15265305 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1965173956225339323, guid: 0cdec9315cf89bd45919c59bd1bb1bb1, type: 3}
   m_PrefabInstance: {fileID: 15265283}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &15265306 stripped
@@ -22751,8 +22733,8 @@ MonoBehaviour:
   - {fileID: 15265308}
   - {fileID: 15265307}
   - {fileID: 15265306}
-  - {fileID: 15265305}
-  - {fileID: 15265304}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 15265303}
   - {fileID: 15265302}
   - {fileID: 15265301}
@@ -22841,8 +22823,8 @@ MonoBehaviour:
   - {fileID: 15265294}
   - {fileID: 15265293}
   - {fileID: 15265292}
-  - {fileID: 15265291}
-  - {fileID: 15265290}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 15265289}
   - {fileID: 15265288}
   - {fileID: 15265287}
