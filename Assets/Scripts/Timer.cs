@@ -24,8 +24,9 @@ public class Timer : MonoBehaviour
         if (time > 0)
         {
             time -= Time.deltaTime;
-            if(time > 30)
+            if(time < 30)
             {
+                Debug.Log("30seconds Left");
                 Warning.Play();
             }
         }
