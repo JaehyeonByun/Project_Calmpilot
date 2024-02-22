@@ -102,7 +102,22 @@ namespace Bhaptics.SDK2
                     // Change textbox text into the newly received Heart Rate (integer like "86" which represents beats per minute)
                     textBox.text = (string)msg["payload"]["hr"];
                 }
-                if ((DateTime.Now - lastFeedbackTime).TotalSeconds >= 9)
+
+                if (numberInfoList.Count >= 5) // 5초동안 심박수 10증가
+                {
+                    int previousHeartRate = numberInfoList[numberInfoList.Count - 5].Value;
+                    int heartRateChange = info.Value - previousHeartRate;
+                    if (heartRateChange >= 10 /*5초 동안 심박변화*/ && (DateTime.Now - lastFeedbackTime).TotalSeconds >= 9)
+                    {
+                        Debug.Log("feed");
+                        Debug.Log(info.Value);
+                        BhapticsLibrary.Play("breathing_guide_10s");
+                        lastFeedbackTime = DateTime.Now; // Update last feedback time
+                        info.HapticFeedbackTriggered = true;
+                    }
+                }
+
+                if ((DateTime.Now - lastFeedbackTime).TotalSeconds >= 9) // 절대심박수 120 이상
                 {
                     if (info.Value >= 115)
                     {

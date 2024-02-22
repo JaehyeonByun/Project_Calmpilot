@@ -18286,6 +18286,7 @@ GameObject:
   - component: {fileID: 1187296021}
   - component: {fileID: 1187296024}
   - component: {fileID: 1187296023}
+  - component: {fileID: 1187296025}
   m_Layer: 5
   m_Name: Record
   m_TagString: Untagged
@@ -18354,6 +18355,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187296020}
   m_CullTransparentMesh: 1
+--- !u!114 &1187296025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187296020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d148bad491df0b43a248348e572ac97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1187296023}
+  blinkDuration: 3
+  blinkInterval: 1
+  fadeDuration: 1
 --- !u!1 &1191810574
 GameObject:
   m_ObjectHideFlags: 0
@@ -19613,7 +19630,7 @@ GameObject:
   - component: {fileID: 1285328618}
   - component: {fileID: 1285328617}
   - component: {fileID: 1285328616}
-  - component: {fileID: 1285328615}
+  - component: {fileID: 1285328619}
   m_Layer: 5
   m_Name: Monitor
   m_TagString: Untagged
@@ -19640,23 +19657,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.7149491, y: 2.865224}
   m_SizeDelta: {x: 74.5143, y: 43.3523}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1285328615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285328613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
-  Script: {fileID: 787832128}
-  PPT: {fileID: 850756745}
-  NextScript: {fileID: 1615746565}
-  NextPPT: {fileID: 1630943864}
 --- !u!114 &1285328616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19701,8 +19701,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1285328615}
-        m_TargetAssemblyTypeName: ScriptNext, Assembly-CSharp
+      - m_Target: {fileID: 1285328619}
+        m_TargetAssemblyTypeName: EndPresentation, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -19751,6 +19751,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285328613}
   m_CullTransparentMesh: 1
+--- !u!114 &1285328619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285328613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3159e8e57833fff4f84374306ef5f487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EndButton: {fileID: 850756745}
+  Timer: {fileID: 1431796107}
+  clapSound: {fileID: 1793932185}
+  GameEnd: {fileID: 1391996006}
 --- !u!1 &1288874838 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 198c666b78a8e984da6fb2305107c6a2, type: 3}
