@@ -18326,7 +18326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -29945,7 +29945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa61ba2b50bff047a28a033694db996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 0}
+  ClickSound: {fileID: 819956879}
   Script: {fileID: 978734394}
   PPT: {fileID: 1236095802}
   NextScript: {fileID: 2021380089}
